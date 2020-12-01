@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../CSS/bootstrap.css" rel="stylesheet" />
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="../CSS/font-awesome.min.css" rel="stylesheet" />
+    <link href="../CSS/estilos.css" rel="stylesheet" id="theme" />
+    <link href="../CSS/modo-noche.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/f0f7d8a404.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Portafolio</a>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="proyectos.html">Proyectos</a>
+                </li>
+                <li>
+                    <a href="Integrantes.html">Integrantes</a>
+                </li>
+                <li>
+                    <a href="index.html">Contactanos</a>
+                </li>
+                <li>
+                    <a href="#" onclick="switchSheet()">Modo oscuro</a>
+
+                </li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+    <br />
+    <h5 class="colors">¿Quieres saber quienes están detrás de estos proyectos? <br />Conocenos</h5>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;float:right;">
+                <img src="../img/Pedro_Pablo.jpeg" style="width:286px;height:300px" class="card-img-top" alt="..." />
+                <div class="card-body colors2">
+                    <h5 class="card-title">Pedro Pablo</h5>
+                    <p class="card-text">TSU en TIC con conocimientos en C#, Flutter, HTML</p>
+                    <h5 class="card-title">Proyectos en los que ha trabajado:</h5>
+                </div>
+                <ul class="list-group list-group-flush colors2">
+                    <li class="list-group-item colors2"><a class="colors2" href="SoftFruit.html">SoftFruit</a></li>
+                    <li class="list-group-item colors2"><a class="colors2" href="encriptar.html">Encriptar</a></li>
+                    <li class="list-group-item colors2"><a class="colors2" href="HeyBook.html">HeyBooks!</a></li>
+                </ul>
+                <div class="card-body colors2">
+                    <h5 class="card-title">¡Contactalo!</h5>
+                    <p class="card-text">9997857412</p>
+                    <p class="card-text">PedroPablo@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" style="padding-left:90px">
+            <div class="card" style="width: 18rem;">
+                <img src="../img/andrea.jpeg" style="width:286px;height:300px" class="card-img-top" alt="..." />
+                <div class="card-body colors2">
+                    <h5 class="card-title">Andrea Turriza</h5>
+                    <p class="card-text">TSU en TIC con conocimientos en C#, Flutter, HTML</p>
+                    <h5 class="card-title">Proyectos en los que ha trabajado:</h5>
+                </div>
+                <ul class="list-group list-group-flush colors2">
+                    <li class="list-group-item colors2"><a class="colors2" href="FireDetection.html">FireDetection</a></li>
+                    <li class="list-group-item colors2"><a class="colors2" href="HeyBook.html">HeyBook!</a></li>
+                    <li class="list-group-item colors2"><a class="colors2" href="encriptar.html">Desencriptar</a></li>
+                </ul>
+                <div class="card-body colors2">
+                    <h5 class="card-title">¡Contactalo!</h5>
+                    <p class="card-text">9997858741</p>
+                    <p class="card-text">Andrea@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;float:left">
+                <img src="../img/Elias.jpeg" class="card-img-top" alt="..." style="width:286px;height:300px" />
+                <div class="card-body colors2">
+                    <h5 class="card-title">Elías Chi</h5>
+                    <p class="card-text">TSU en TIC con conocimientos en C#, Flutter, HTML</p>
+                    <h5 class="card-title">Proyectos en los que ha trabajado:</h5>
+                </div>
+                <ul class="list-group list-group-flush colors2">
+                    <li class="list-group-item colors2"><a class="colors2" href="FireDetection.html">FireDetection</a></li>
+                    <li class="list-group-item colors2"><a class="colors2" href="HeyBook.html">HeyBook!</a></li>
+                    <li class="list-group-item colors2"><a class="colors2" href="encriptar.html">Desencriptar</a></li>
+                </ul>
+                <div class="card-body colors2">
+                    <h5 class="card-title">¡Contactalo!</h5>
+                    <p class="card-text">9997858574</p>
+                    <p class="card-text">Elias@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchSheet() {
+            let theme = document.getElementById("theme");
+
+            if (theme.getAttribute("href") == "../CSS/estilos.css") {
+                theme.href = "../CSS/modo-noche.css";
+            } else {
+                theme.href = "../CSS/estilos.css";
+            }
+        }
+    </script>
+</body>
+</html>

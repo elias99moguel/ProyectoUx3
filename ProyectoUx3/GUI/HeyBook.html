@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../CSS/bootstrap.css" rel="stylesheet" />
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="../CSS/font-awesome.min.css" rel="stylesheet" />
+    <link href="../CSS/estilos.css" rel="stylesheet" id="theme" />
+    <link href="../CSS/modo-noche.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/f0f7d8a404.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portafolio</a>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="proyectos.html">Proyectos</a>
+                </li>
+                <li>
+                    <a href="Integrantes.html">Integrantes</a>
+                </li>
+                <li>
+                    <a href="index.html">Contactanos</a>
+                </li>
+                <li>
+                    <a href="#" onclick="switchSheet()">Modo oscuro</a>
+
+                </li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+
+    <br />
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="colors">HeyBook!</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p class="colors">Una aplicación móvil que está en proceso </p>
+            <p class="colors"><small>Programado por: Pedro Pablo, Elias Chi, Andrea Turriza</small> </p>
+        </div>
+    </div>
+    <br />
+
+    
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 18rem;float:right;">
+                <img src="../img/libros1.jpeg" style="width:286px;height:300px" class="card-img-top" alt="..." />
+                <div class="card-body colors2">
+                    <h5 class="card-title">¿Por qué desarrollar una App Móvil?</h5>
+                    <p class="card-text">Para una mayor comodidad al usuario evitandole la entrada al navegador</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6" style="padding-left:90px">
+            <div class="card" style="width: 18rem;">
+                <img src="../img/libros2.jpeg" style="width:286px;height:310px" class="card-img-top" alt="..." />
+                <div class="card-body colors2">
+                    <h5 class="card-title">¿En que esta programado?</h5>
+                    <p class="card-text">Flutter</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function switchSheet() {
+            let theme = document.getElementById("theme");
+
+            if (theme.getAttribute("href") == "../CSS/estilos.css") {
+                theme.href = "../CSS/modo-noche.css";
+            } else {
+                theme.href = "../CSS/estilos.css";
+            }
+        }
+    </script>
+</body>
+</html>

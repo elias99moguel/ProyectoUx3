@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../CSS/bootstrap.css" rel="stylesheet" />
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="../CSS/font-awesome.min.css" rel="stylesheet" />
+    <link href="../CSS/estilos.css" rel="stylesheet" id="theme" />
+    <link href="../CSS/modo-noche.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/f0f7d8a404.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portafolio</a>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="proyectos.html">Proyectos</a>
+                </li>
+                <li>
+                    <a href="Integrantes.html">Integrantes</a>
+                </li>
+                <li>
+                    <a href="index.html">Contactanos</a>
+                </li>
+                <li>
+                    <a href="#" onclick="switchSheet()">Modo oscuro</a>
+
+                </li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+
+    <br />
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="colors">FireDetection</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p class="colors">Una página web que monitorea los incendios forestales en timpo real</p>
+            <p class="colors"><small>Programado por: Elías Chi y Andrea Turriza</small> </p>
+        </div>
+    </div>
+    <br />
+
+    <div class="row">
+        <div class="col-md-12" style="padding-left:20px">
+            <h4 class="colors3">Web</h4>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-md-6" style="padding-left:20px">
+            <div class="card mb-3">
+                <img src="../img/Captura de pantalla (440).png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">¿A quién va dirigido?</h5>
+                    <p class="card-text">Hacía las instituciones encargadas de monitorear los incendios forestales</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6" style="padding-right:20px;">
+            <div class="card mb-3">
+                <img src="../img/Captura de pantalla (442).png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">¿Cuál es la función principal?</h5>
+                    <p class="card-text">La detección de incendios en tiempo real por medio de unos sensores los cuales mandan una señal a una antena sin nececidad de internet </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12" style="padding-left:20px">
+            <h4 class="colors">Móvil</h4>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-8">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="../img/FD.jpeg" class="card-img-top" alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">¿Por qué desarrollar una App Móvil?</h5>
+                                    <p class="card-text">Para tener un mejor acceso al monitoreo en tiempo real sin necesidad de tener abierto el navegador</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="../img/FD3.jpeg" class="card-img-top" alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">¿En que lenguaje esta programado?</h5>
+                                    <p class="card-text">En Flutter</p>
+                                    &nbsp;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+
+    <script>
+        function switchSheet() {
+            let theme = document.getElementById("theme");
+
+            if (theme.getAttribute("href") == "../CSS/estilos.css") {
+                theme.href = "../CSS/modo-noche.css";
+            } else {
+                theme.href = "../CSS/estilos.css";
+            }
+        }
+    </script>
+
+</body>
+</html>

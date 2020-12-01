@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="../CSS/bootstrap.css" rel="stylesheet" />
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="../CSS/font-awesome.min.css" rel="stylesheet" />
+    <link href="../CSS/estilos.css" rel="stylesheet" id="theme" />
+    <link href="../CSS/modo-noche.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/f0f7d8a404.js"></script>
+    <title></title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Portafolio</a>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="proyectos.html">Proyectos</a>
+                </li>
+                <li>
+                    <a href="Integrantes.html">Integrantes</a>
+                </li>
+                <li>
+                    <a href="index.html">Contactanos</a>
+                </li>
+                <li>
+                    <a href="#" onclick="switchSheet()">Modo oscuro</a>
+
+                </li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+
+    <br />
+    <h5 class="colors">Programamos en Web y Móvil, para conocer más sobre nuestros proyectos da click en el que más te interese</h5>
+    <br />
+    <!---TABS--->
+    <div class="tabContainer">
+        <div class="buttonContainer">
+            <button onclick="mmostrarPanel(0,'#212121')">Páginas web</button>
+            <button onclick="mmostrarPanel(1,'#212121')">Móvil</button>
+        </div>
+        <br />
+        <div class="tabPanel">
+            <br />
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <br />
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="../img/encriptar.jpeg" class="card-img" style="height:320px" alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Encriptar y Desencriptar</h5>
+                                    <p class="card-text">Es una aplicación para poder encriptar de manera simetrica texto de manera gratuita y rápida</p>
+                                    <p class="card-text"><small>Programadores: Pedro Pablo, Elías Chi, Andrea Turriza</small></p>
+                                    <a href="integrantes.html" class="card-text"><small class="text-muted">¿Quieres conocer a los programadores?, click aquí</small></a>
+                                    <a href="encriptar.html" class="card-text"><small class="text-muted">¿Quieres conocer más sobre este proyecto?, click aquí</small></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <br />
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="../img/FD logo1.png" class="card-img" alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fire Detection</h5>
+                                    <p class="card-text">Página web ganadora del infomatrix peninsular y continental. Esta página tiene como fin la detección de incendios por medio de un dispositivos mandando una señal a los insititutos encargados sin necesidad de internet</p>
+                                    <p class="card-text"><small>Programadores: Elías Chi, Andrea Turriza</small></p>
+                                    <a href="Integrantes.html" class="card-text"><small class="text-muted">¿Quieres conocer a los programadores?, click aquí</small></a>
+                                    <a href="index.html" class="card-text"><small class="text-muted">¿Quieres conocer más sobre este proyecto?, click aquí</small></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            
+        </div>
+
+        <div class="tabPanel">
+            <br />
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <br />
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="../img/papa.jpeg" class="card-img" alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">SoftFruit</h5>
+                                    <p class="card-text">La aplicación SoftFruit, es para el uso de gestión de papayas el cual el pedido se puede obtener por mediante código QR o manualmente</p>
+                                    <p class="card-text"><small>Programador:Pedro Pablo</small></p>
+                                    <a href="Integrantes.html" class="card-text"><small class="text-muted">¿Quieres conocer al programador, click aquí</small></a>
+                                    <br />
+                                    <a href="SoftFruit.html" class="card-text"><small class="text-muted">¿Quieres conocer más sobre este proyecto?, click aquí</small></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <br />
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="../img/FD.jpeg" style="height:320px" class="card-img" alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fire Detection</h5>
+                                    <p class="card-text">Versión móvil de la página web FireDetection, creada con el fin de tener un mejor monitoreo de los incendios en tiempo real</p>
+                                    <p class="card-text"><small>Programadores:Elías Chi, Andrea Turriza</small></p>
+                                    <a href="Integrantes.html" class="card-text"><small class="text-muted">¿Quieres conocer al los programadores, click aquí</small></a>
+                                    <a href="FireDetection.html" class="card-text"><small class="text-muted">¿Quieres conocer más sobre este proyecto?, click aquí</small></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="../img/libros1.jpeg" class="card-img" alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">HeyBook!</h5>
+                                    <p class="card-text">Prototipo de aplicación móvil donde es posible escribir y publicar libros y canciones a los nuevos artistas</p>
+                                    <p class="card-text"><small>Programadores:Pedro Pablo, Elías Chi, Andrea Turriza</small></p>
+                                    <a href="Integrantes.html" class="card-text"><small class="text-muted">¿Quieres conocer al los programadores, click aquí</small></a>
+                                    <a href="HeyBook.html" class="card-text"><small class="text-muted">¿Quieres conocer más sobre este proyecto?, click aquí</small></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+    <!---FIN TABS-->
+
+
+
+    <script>
+        function switchSheet() {
+            let theme = document.getElementById("theme");
+
+            if (theme.getAttribute("href") == "../CSS/estilos.css") {
+                theme.href = "../CSS/modo-noche.css";
+            } else {
+                theme.href = "../CSS/estilos.css";
+            }
+        }
+
+        var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
+        var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
+
+        function mmostrarPanel(panelIndex, colorCode) {
+            tabButtons.forEach(function (node) {
+                node.style.backgroundColor = "";
+                node.style.color = "";
+            });
+            tabButtons[panelIndex].style.backgroundColor = colorCode;
+            tabButtons[panelIndex].style.color = "white";
+            tabPanels.forEach(function (node) {
+                node.style.display = "none";
+            });
+
+            tabPanels[panelIndex].style.display = "block";
+            tabPanels[panelIndex].style.backgroundColor = colorCode;
+        }
+
+    </script>
+</body>
+</html>
